@@ -92,6 +92,10 @@ body {
     margin: 17px auto;
 }
 
+.item-input{
+    appearance: none;
+}
+
 .item-input:checked ~ .item-title{
    color: red;
 }
