@@ -1,3 +1,123 @@
-body{
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: green;
+}
 
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: red;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(246, 246, 237, 1);
+    cursor: pointer;
+}
+
+.container:hover .item-title {
+    color: black;
+}
+
+.container:hover .close-btn {
+    opacity: 1;
+    color: black;
+}
+
+.main-title {
+    width: 80%;
+    margin: 15px auto;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.item {
+    margin: 20px 0;
+}
+
+.items-wrapper {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.item-title {
+    font-size: 27px;
+    font-weight: 900;
+    color: rgba(30, 92, 209, 1)
+}
+
+
+.item:hover .item-img {
+    display: block;
+    height: 200px;
+    margin: 17px auto;
+}
+
+.item:hover .open-btn {
+   opacity: 1;
+}
+
+.item:hover .close-btn {
+    opacity: 0;
+}
+
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+}
+
+.open-btn{
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+}
+
+.item-img {
+    display: none;
+}
+
+.item-input:checked ~ .item-img {
+    display: block;
+    height: 200px;
+    margin: 17px auto;
+}
+
+.item-input:checked ~ .item-title{
+   color: red;
+}
+
+.item-input:checked ~ .item-title .close-btn{
+    opacity: 0;
+}
+
+.container:hover .item-input:checked ~ .item-title .open-btn{
+    opacity: 1;
+}
+
+.item-title::before {
+    content: "";
+    width: 100px;
+    position: absolute;
+    background-color: rgba(211, 217, 225, 1);
+    height: 5px;
+}
+
+
+@keyframes open {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 200px;
+    }
 }
