@@ -65,12 +65,9 @@ body {
     margin: 5% auto;
 }
 
-.item:hover .open-btn {
-    opacity: 1;
-}
 
 .item:hover .close-btn {
-    opacity: 0;
+    transform: rotate(45deg);
 }
 
 
@@ -83,14 +80,6 @@ body {
     transition: 0.2s;
 }
 
-.open-btn {
-    position: absolute;
-    right: 10px;
-    opacity: 0;
-    width: 20px;
-    height: 20px;
-    transition: 0.2s ease-in-out;
-}
 
 .item-img {
     height: 0;
@@ -114,12 +103,9 @@ body {
     transition-duration: 0.5s;
 }
 
-.item-input:checked ~ .item-title .close-btn {
-    opacity: 0;
-}
+.container:hover .item-input:checked ~ .item-title .close-btn {
 
-.container:hover .item-input:checked ~ .item-title .open-btn {
-    opacity: 1;
+    transform: rotate(45deg);
 }
 
 label{
