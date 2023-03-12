@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7bb4d3f-97b6-46a7-99e0-a7a17622a82d" name="Changes" comment="" />
+    <list default="true" id="b7bb4d3f-97b6-46a7-99e0-a7a17622a82d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssBayan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cssBayan/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssBayan/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssBayan/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678478938562</updated>
       <workItem from="1678478939675" duration="10646000" />
-      <workItem from="1678563649939" duration="10430000" />
+      <workItem from="1678563649939" duration="17808000" />
     </task>
     <servers />
   </component>
