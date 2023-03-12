@@ -17,7 +17,6 @@ body {
     transform: translate(-50%);
     background-color: rgba(246, 246, 237, 1);
     cursor: pointer;
-    overflow: hidden;
 }
 
 .container:hover .item-title {
@@ -29,6 +28,7 @@ body {
     color: black;
 }
 
+
 .main-title {
     width: 80%;
     margin: 3% auto;
@@ -37,16 +37,14 @@ body {
     font-family: 'Fira Sans';
 }
 
-.item {
-    margin: 1% 0;
-}
-
 .items-wrapper {
     width: 80%;
-    height: 100%;
+    height: auto;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    background-color: rgba(246, 246, 237, 1);
+    padding: 0 10%;
 }
 
 .item-title {
@@ -73,7 +71,7 @@ body {
 
 .close-btn {
     position: absolute;
-    right: 10px;
+    right: 10%;
     opacity: 0;
     width: 15px;
     height: 15px;
@@ -104,11 +102,10 @@ body {
 }
 
 .container:hover .item-input:checked ~ .item-title .close-btn {
-
     transform: rotate(45deg);
 }
 
-label{
+label {
     cursor: pointer;
 }
 
