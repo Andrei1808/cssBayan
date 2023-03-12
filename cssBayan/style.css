@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 80%;
-   min-height: 100vh;
+    min-height: 100vh;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -31,14 +31,14 @@ body {
 
 .main-title {
     width: 80%;
-    margin: 15px auto;
+    margin: 3% auto;
     font-weight: 900;
     font-size: 40px;
     font-family: 'Fira Sans';
 }
 
 .item {
-    margin: 15px 0;
+    margin: 1% 0;
 }
 
 .items-wrapper {
@@ -54,14 +54,15 @@ body {
     font-weight: 900;
     color: rgba(30, 92, 209, 1);
     font-family: 'Fira Sans';
+    border-top: 1px rgba(211, 217, 225, 1) solid;
+    padding: 2% 0 0 0;
 }
-
 
 .item:hover .item-img {
     display: block;
     height: 200px;
     transform: scale(1);
-    margin: 15px auto;
+    margin: 5% auto;
 }
 
 .item:hover .open-btn {
@@ -79,6 +80,7 @@ body {
     opacity: 0;
     width: 15px;
     height: 15px;
+    transition: 0.2s;
 }
 
 .open-btn {
@@ -87,6 +89,7 @@ body {
     opacity: 0;
     width: 20px;
     height: 20px;
+    transition: 0.2s ease-in-out;
 }
 
 .item-img {
@@ -99,7 +102,7 @@ body {
     display: block;
     height: 200px;
     transform: scale(1);
-    margin: 15px auto;
+    margin: 5% auto;
 }
 
 .item-input {
@@ -119,12 +122,9 @@ body {
     opacity: 1;
 }
 
-.item-title::before {
-    content: "";
-    width: 100px;
-    position: absolute;
-    background-color: rgba(211, 217, 225, 1);
-    height: 5px;
+label{
+    cursor: pointer;
 }
+
 
 
